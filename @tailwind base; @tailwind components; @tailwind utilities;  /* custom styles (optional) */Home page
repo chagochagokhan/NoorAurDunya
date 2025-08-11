@@ -1,0 +1,43 @@
+import React from "react";
+
+export default function Home() { return ( <div className="bg-gray-50 min-h-screen font-sans"> {/* Header */} <header className="bg-green-800 text-white p-4 shadow-md"> <div className="max-w-6xl mx-auto flex justify-between items-center"> <h1 className="text-2xl font-bold">NoorAurDunya</h1> <nav className="space-x-6"> <a href="#" className="hover:text-yellow-300">Home</a> <a href="#quran" className="hover:text-yellow-300">Quran</a> <a href="#hadees" className="hover:text-yellow-300">Hadees</a> <a href="#articles" className="hover:text-yellow-300">Articles</a> <a href="#contact" className="hover:text-yellow-300">Contact</a> </nav> </div> </header>
+
+{/* Hero Section */}
+  <section className="bg-[url('https://images.unsplash.com/photo-1603295187294-2f10f48ed2ca')] bg-cover bg-center text-center py-32 text-white">
+    <div className="bg-black bg-opacity-50 p-6 inline-block rounded-lg">
+      <h2 className="text-4xl font-bold mb-4">وَجَعَلْنَا مِنَ الْمَاءِ كُلَّ شَيْءٍ حَيٍّ</h2>
+      <p className="text-lg">اور ہم نے ہر زندہ چیز کو پانی سے بنایا۔ (الانبیاء:30)</p>
+    </div>
+  </section>
+
+  {/* Content Sections */}
+  <main className="max-w-6xl mx-auto p-6 grid md:grid-cols-3 gap-6">
+    <div id="quran" className="bg-white shadow-md rounded-lg p-4">
+      <h3 className="text-xl font-semibold mb-2">قرآن و سنت</h3>
+      <p>قرآن کی تلاوت، ترجمہ، اور تفسیر کے ذریعے ہدایت حاصل کریں۔</p>
+    </div>
+    <div id="hadees" className="bg-white shadow-md rounded-lg p-4">
+      <h3 className="text-xl font-semibold mb-2">احادیث مبارکہ</h3>
+      <p>صحیح احادیث سے نبویؐ تعلیمات کو اپنی زندگی کا حصہ بنائیں۔</p>
+    </div>
+    <div id="articles" className="bg-white shadow-md rounded-lg p-4">
+      <h3 className="text-xl font-semibold mb-2">اسلامی مضامین</h3>
+      <p>مختلف اسلامی موضوعات پر معلوماتی اور اصلاحی مضامین پڑھیں۔</p>
+    </div>
+  </main>
+
+  {/* Footer */}
+  <footer id="contact" className="bg-green-800 text-white p-6 mt-10">
+    <div className="max-w-6xl mx-auto text-center">
+      <p>© {new Date().getFullYear()} NoorAurDunya - تمام حقوق محفوظ ہیں</p>
+      <div className="mt-4 space-x-4">
+        <a href="#" className="hover:text-yellow-300">Facebook</a>
+        <a href="#" className="hover:text-yellow-300">YouTube</a>
+        <a href="#" className="hover:text-yellow-300">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+); }
+
